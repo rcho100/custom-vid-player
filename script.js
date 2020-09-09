@@ -27,7 +27,21 @@ function stopVideo() {
 }
 
 function updateProgress() {
+    //Progress Bar
     progressBar.value = (video.currentTime / video.duration) * 100
+
+    // Timestamp
+    let minutes = Math.floor(video.currentTime / 60).toString()
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
+
+    let seconds = Math.floor(video.currentTime % 60).toString()
+    if (seconds < 10) {
+        seconds = "0" + seconds
+    }
+
+    timestamp.innerText = `${minutes}:${seconds}`
 }
 
 function setProgress() {
