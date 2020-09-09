@@ -26,10 +26,15 @@ function stopVideo() {
     video.pause()
 }
 
+function updateProgress() {
+    progressBar.value = (video.currentTime / video.duration) * 100
+}
+
 //Event listeners
 video.addEventListener('click', toggleVideoStatus)
 video.addEventListener('pause', updatePlayIcon)
 video.addEventListener('play', updatePlayIcon)
+video.addEventListener('timeupdate', updateProgress)
 
 playIcon.addEventListener('click', toggleVideoStatus)
 
