@@ -1,7 +1,7 @@
 const video = document.getElementById('video')
-const play = document.getElementById('play')
-const stop = document.getElementById('stop')
-const progress = document.getElementById('progress')
+const playIcon = document.getElementById('play')
+const stopIcon = document.getElementById('stop')
+const progressBar = document.getElementById('progress')
 const timestamp = document.getElementById('timestamp')
 
 // Play & pause (toggle) video
@@ -26,4 +26,4 @@ video.addEventListener('click', toggleVideoStatus)
 video.addEventListener('pause', updatePlayIcon)
 video.addEventListener('play', updatePlayIcon)
 
-play.addEventListener('click', toggleVideoStatus)
+playIcon.addEventListener('click', toggleVideoStatus)
