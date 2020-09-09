@@ -50,6 +50,18 @@ h1 {
     color: #fff;
 }
 
+.controls .fa-play {
+    color: #28a745;
+}
+
+.controls .fa-stop {
+    color: #dc3545;
+}
+  
+.controls .fa-pause {
+    color: #fff;
+}
+
 @media (max-width: 800px) {
     .screen, .controls {
         width: 90%;
