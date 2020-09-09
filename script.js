@@ -16,4 +16,5 @@ function toggleVideoStatus() {
 
 //Event listeners
 video.addEventListener('click', toggleVideoStatus)
+play.addEventListener('click', toggleVideoStatus)
 
