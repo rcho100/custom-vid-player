@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial:wght@700&display=swap');
-
 * {
     box-sizing: border-box;
 }
@@ -17,7 +15,7 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 37px;
+    font: 500 40px Georgia ;
 }
 
 .screen {
