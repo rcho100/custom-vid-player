@@ -21,9 +21,16 @@ function updatePlayIcon() {
     }
 }
 
+function stopVideo() {
+    video.currentTime = 0
+    video.pause()
+}
+
 //Event listeners
 video.addEventListener('click', toggleVideoStatus)
 video.addEventListener('pause', updatePlayIcon)
 video.addEventListener('play', updatePlayIcon)
 
 playIcon.addEventListener('click', toggleVideoStatus)
+
+stopIcon.addEventListener('click', stopVideo)
